@@ -6,13 +6,13 @@ This project follows Semantic Versioning.
 
 ## [1.0.0] 
 ### Added
-- xyz
+I added every single image that I used to create this website and I placed them in the img folder
 
 ### Changed
-- xyz
+I changed my footer
 
 ### Fixed
-- xyz
+I fixed my footer and added a copyright symbol,and took it to the centre
 
 ## Semantic Versioning
 
