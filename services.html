@@ -3,58 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Group Security</title>
+    <title>Our Services | Alpha Group Security</title>
     <link rel="stylesheet" href="css/style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="servicespage">
-    
+
+<body>
+
     <header>
-    <nav>
-         <img src="img\3d475d4abf5bf664187c0dfed7041f9b253d76dcdb7653c1f5637bcd340b20a8.png" alt="Company Logo" width="50" height="50">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="enquiry.html">Request</a>
-        <a href="contact.html">Contact</a>
-        <a href="#" class="searchbtn">🔍︎</a>
-    </nav>
+        <nav>
+            <div class="logo-container">
+                <img src="img/3d475d4abf5bf664187c0dfed7041f9b253d76dcdb7653c1f5637bcd340b20a8.png" alt="Company Logo" width="50" height="50">
+                <span class="logo-text">Alpha Group Security</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="enquiry.html">Request</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
     </header>
 
     <main class="servicespage">
-        <!--These are the services provided by the company-->
-        <section class="servicecard">
-        <h2>Services</h2>
-            <h3>Guarding Services</h3>
-            <p>24/7 guards for retail, offices & facilities</p>
-            <h3>Event Security</h3>
-            <p>Crowd control & VIP protection for any event</p>
-            <h3>Residential Security</h3>
-            <p>Keep your home & family safe</p>
-            <h3>Commercial Security</h3>
-            <p>Protection for your business</p>
-            <h3>Alarm Response</h3>
-            <p>Rapid response teams when alarms are triggered</p>
-            <h3>Camera Installation</h3>
-            <p>CCTV setup and monitoring 24/7</p>
-            <img src="img\Screenshot_19-4-2026_1618_i.pinimg.com.jpeg" alt="Security Services" width="300" height="300">
-            <img src="img\camera instal.webp" alt="Camera Installation" width="300" height="300">
-            <img src="img\security-guards-7985917_960_720.jpg" alt="Security Guard" width="300" height="300">
+        <section class="page-header">
+            <h2>Our Services</h2>
+            <p>Professional security solutions tailored to your needs</p>
+        </section>
+
+        <div id="addedMessage" class="cart-message" style="display: none;">✓ Service has been added to your enquiry</div>
+
+        <section class="services-grid">
+            <div class="service-card">
+                <img src="img/security-guards-7985917_960_720.jpg" alt="Security Guard" width="300" height="250">
+                <div class="service-info">
+                    <h3>Guarding Services</h3>
+                    <p>24/7 professional guards for retail stores, offices, and facilities.</p>
+                    <div class="service-price">
+                        <span class="price">From R2,500/mo</span>
+                        <span class="price-label">Starting at</span>
+                    </div>
+                    <button class="btn-book" data-service="Guarding Services" data-price="2500">Book Service</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="img/event security.jpg" alt="Event Security" width="300" height="250">
+                <div class="service-info">
+                    <h3>Event Security</h3>
+                    <p>Crowd control, VIP protection, and security coordination for events.</p>
+                    <div class="service-price">
+                        <span class="price">From R1,200/event</span>
+                        <span class="price-label">Starting at</span>
+                    </div>
+                    <button class="btn-book" data-service="Event Security" data-price="1200">Book Service</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="img/Residential security.jpg" alt="Residential Security" width="300" height="250">
+                <div class="service-info">
+                    <h3>Residential Security</h3>
+                    <p>Keep your home and family safe with our residential security solutions.</p>
+                    <div class="service-price">
+                        <span class="price">From R1,800/mo</span>
+                        <span class="price-label">Starting at</span>
+                    </div>
+                    <button class="btn-book" data-service="Residential Security" data-price="1800">Book Service</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="img/commercial security.jpg" alt="Commercial Security" width="300" height="250">
+                <div class="service-info">
+                    <h3>Commercial Security</h3>
+                    <p>Comprehensive security solutions for businesses of all sizes.</p>
+                    <div class="service-price">
+                        <span class="price">From R3,500/mo</span>
+                        <span class="price-label">Starting at</span>
+                    </div>
+                    <button class="btn-book" data-service="Commercial Security" data-price="3500">Book Service</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="img/alarm reponse.jpg" alt="Alarm Response" width="300" height="250">
+                <div class="service-info">
+                    <h3>Alarm Response</h3>
+                    <p>Rapid response teams available 24/7 when your security alarms are triggered.</p>
+                    <div class="service-price">
+                        <span class="price">From R800/mo</span>
+                        <span class="price-label">Starting at</span>
+                    </div>
+                    <button class="btn-book" data-service="Alarm Response" data-price="800">Book Service</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="img/camera instal.webp" alt="Camera Installation" width="300" height="250">
+                <div class="service-info">
+                    <h3>Camera Installation</h3>
+                    <p>Professional CCTV installation and 24/7 monitoring services.</p>
+                    <div class="service-price">
+                        <span class="price">From R2,200</span>
+                        <span class="price-label">One-time fee</span>
+                    </div>
+                    <button class="btn-book" data-service="Camera Installation" data-price="2200">Book Service</button>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- ===== BOOKING MODAL ===== -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>📋 Book Your Service</h2>
+                <p>Fill in the details below to get started</p>
+            </div>
+            
+            <div class="modal-body">
+                <div class="service-summary">
+                    <div class="selected-service-info">
+                        <span class="service-icon">🛡️</span>
+                        <div>
+                            <h3 id="modalServiceName">Service Name</h3>
+                            <p id="modalServicePrice">Price: R0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="bookingName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="bookingEmail" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingPhone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="bookingPhone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingDuration">Duration / Quantity</label>
+                            <select id="bookingDuration">
+                                <option value="1">1 Month / Unit</option>
+                                <option value="3">3 Months / Units</option>
+                                <option value="6">6 Months / Units</option>
+                                <option value="12">12 Months / Units</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingAddress">Service Address</label>
+                        <input type="text" id="bookingAddress" placeholder="Enter your address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingNotes">Additional Notes</label>
+                        <textarea id="bookingNotes" rows="3" placeholder="Any special requirements..."></textarea>
+                    </div>
+
+                    <!-- ===== PAYMENT SECTION ===== -->
+                    <div class="payment-section">
+                        <h3>💳 Payment Details</h3>
+                        
+                        <div class="payment-methods">
+                            <div class="payment-method active" data-method="card">
+                                <input type="radio" name="paymentMethod" value="card" checked>
+                                <span>💳 Credit/Debit Card</span>
+                            </div>
+                            <div class="payment-method" data-method="eft">
+                                <input type="radio" name="paymentMethod" value="eft">
+                                <span>🏦 EFT / Bank Transfer</span>
+                            </div>
+                            <div class="payment-method" data-method="cash">
+                                <input type="radio" name="paymentMethod" value="cash">
+                                <span>💰 Cash Payment</span>
+                            </div>
+                        </div>
+
+                        <div class="payment-details">
+                            <div class="card-details" id="cardDetails">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number</label>
+                                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardExpiry">Expiry Date</label>
+                                        <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="cardCvv">CVV</label>
+                                        <input type="password" id="cardCvv" placeholder="***" maxlength="4">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardName">Cardholder Name</label>
+                                        <input type="text" id="cardName" placeholder="Name on card">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="eft-details" id="eftDetails" style="display: none;">
+                                <div class="bank-details-card">
+                                    <h4>🏦 Bank Transfer Details</h4>
+                                    <div class="bank-info">
+                                        <p><strong>Bank:</strong> Standard Bank</p>
+                                        <p><strong>Account Name:</strong> Alpha Group Security</p>
+                                        <p><strong>Account Number:</strong> 1024 5678 9012</p>
+                                        <p><strong>Branch Code:</strong> 051001</p>
+                                        <p><strong>Reference:</strong> Use your name as reference</p>
+                                    </div>
+                                    <p class="eft-note">Please send proof of payment to alphagroupsec1@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="cash-details" id="cashDetails" style="display: none;">
+                                <div class="cash-card">
+                                    <h4>💰 Cash Payment</h4>
+                                    <p>Cash payments can be made at our office location:</p>
+                                    <p><strong>📍 118 N8, Bloemfontein, Free State</strong></p>
+                                    <p>Business Hours: Monday - Friday, 8:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== PRICE SUMMARY ===== -->
+                    <div class="price-summary">
+                        <h3>💰 Price Summary</h3>
+                        <div class="summary-row">
+                            <span>Service:</span>
+                            <span id="summaryServiceName">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Base Price:</span>
+                            <span id="summaryBasePrice">R0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Duration:</span>
+                            <span id="summaryDuration">1 Month/Unit</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>VAT (15%):</span>
+                            <span id="summaryVat">R0</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span><strong>Total Amount:</strong></span>
+                            <span id="summaryTotal"><strong>R0</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-cancel" id="cancelBooking">Cancel</button>
+                        <button type="submit" class="btn-submit-booking">✅ Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Alpha Group Security</h4>
+                <p>Your trusted security partner in South Africa</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Request</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📞 +27 73 915 5695</p>
+                <p>📧 alphagroupsec1@gmail.com</p>
+                <p>📍 118 N8, Bloemfontein, Free State</p>
+            </div>
+        </div>
         <hr>
-        <p><center>Alpha Group Services 2026&copy;All rights reserved</center></p>
-        <hr>
-        <section class="foot">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="enquiry.html">Request</a>
-        <a href="contact.html">Contact</a>
-        </section>
+        <p class="footer-bottom">Alpha Group Services 2026 &copy; All rights reserved</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
