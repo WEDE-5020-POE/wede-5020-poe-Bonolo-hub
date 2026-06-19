@@ -3,59 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote request</title>
+    <title>Request Quote | Alpha Group Security</title>
     <link rel="stylesheet" href="css/style.css">
-    <div class=".enquiry"></div>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
     <header>
-    <nav>
-         <img src="img\3d475d4abf5bf664187c0dfed7041f9b253d76dcdb7653c1f5637bcd340b20a8.png" alt="Company Logo" width="50" height="50">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Sevices</a>
-        <a href="enquiry.html">Request</a>
-        <a href="contact.html">Contact</a>
-        <a href="#" class="searchbtn">🔍︎</a>
-    </nav>
- 
+        <nav>
+            <div class="logo-container">
+                <img src="img/3d475d4abf5bf664187c0dfed7041f9b253d76dcdb7653c1f5637bcd340b20a8.png" alt="Company Logo" width="50" height="50">
+                <span class="logo-text">Alpha Group Security</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" class="active">Request</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
     </header>
 
     <main class="requestpage">
-        <form class="enquiryform">
-        <h3>Quote Request</h3>
-        <!--This form is use to book a quote for a specific service for the company-->
-        <section class="formsections">
-        <li><label><b>Full Name</b></label></li>
-        <input type="text">
-        <li><label><b>Email</b></label></li>
-        <input type="email">
-        <li><label><b>Contact Details</b></label></li>
-        <input type="tel">
-        <li><label><b>Service</b></label></li>
-        <input type="text">
-        <li><label><b>Comment</b></label></li>
-        <input type="text">
+        <section class="page-header">
+            <h2>Request a Quote</h2>
+            <p>Fill in the form below and we'll get back to you within 24 hours</p>
         </section>
-    <button type="submit">Book</button>
 
-    </form>
+        <section class="enquiry-container">
+            <form class="enquiryform" id="enquiryForm">
+                <div class="form-group">
+                    <label for="fullName"><b>Full Name</b> <span class="required">*</span></label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="email"><b>Email Address</b> <span class="required">*</span></label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"><b>Contact Number</b> <span class="required">*</span></label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceSelect"><b>Service Required</b> <span class="required">*</span></label>
+                    <select id="serviceSelect" required>
+                        <option value="">Select a service...</option>
+                        <option value="Guarding Services">Guarding Services</option>
+                        <option value="Event Security">Event Security</option>
+                        <option value="Residential Security">Residential Security</option>
+                        <option value="Commercial Security">Commercial Security</option>
+                        <option value="Alarm Response">Alarm Response</option>
+                        <option value="Camera Installation">Camera Installation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message"><b>Message / Comments</b></label>
+                    <textarea id="message" rows="5" placeholder="Tell us more about your security needs..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Enquiry</button>
+            </form>
+
+            <div class="enquiry-info">
+                <div class="info-card">
+                    <h4>📞 Quick Contact</h4>
+                    <p>Call us directly for immediate assistance</p>
+                    <p><strong>+27 73 915 5695</strong></p>
+                </div>
+                <div class="info-card">
+                    <h4>📧 Email Us</h4>
+                    <p>Send us an email anytime</p>
+                    <p><strong>alphagroupsec1@gmail.com</strong></p>
+                </div>
+                <div class="info-card">
+                    <h4>⏰ Response Time</h4>
+                    <p>We aim to respond to all enquiries within 24 hours</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Alpha Group Security</h4>
+                <p>Your trusted security partner in South Africa</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Request</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📞 +27 73 915 5695</p>
+                <p>📧 alphagroupsec1@gmail.com</p>
+                <p>📍 118 N8, Bloemfontein, Free State</p>
+            </div>
+        </div>
         <hr>
-        <p><center>Alpha Group Services 2026&copy;All rights reserved</center></p>
-        <hr>
-        <section class="foot">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="enquiry.html">Request</a>
-        <a href="contact.html">Contact</a>
-        </section>
+        <p class="footer-bottom">Alpha Group Services 2026 &copy; All rights reserved</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
