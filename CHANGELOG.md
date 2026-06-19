@@ -13,12 +13,22 @@ I have added things like hover which are active basically pseudoclasses
 In my html service page i added a few descriptions for the services provided
 I also added few classes here and for me to be able to code for external css.
 
+19 June 2026
+ i made a pages that are more interactive, i also applied SEO implementaion.
+ My enquiry form now has full interaction with the user and it implements AJAX style submission
+Same goes for the contact form.
+I have redesigned my hero section a bit.
+
 
 ### Changed
 I changed my footer
 26 May 2026
 In my html files i  chnaged the footer to consist of the website links.
 I also linked style.css to all of my html files using <link rel="stylesheet" href=css/style.css> in the head tag right below the title tag
+
+19 June 2026 
+
+I have changed all the pages so that i can properly code with javascript
 
 ### Fixed
 I fixed my footer and added a copyright symbol,and took it to the centre
