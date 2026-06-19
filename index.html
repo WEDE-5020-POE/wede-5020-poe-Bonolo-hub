@@ -3,49 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Group Security</title>
+    <title>Alpha Group Security | Professional Security Services</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <header>
-    <nav>
-        <!--This is my navigation bar-->
-        <img src="img\3d475d4abf5bf664187c0dfed7041f9b253d76dcdb7653c1f5637bcd340b20a8.png" alt="Company Logo" width="50" height="50">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="enquiry.html">Request</a>
-        <a href="contact.html">Contact</a>
-        <a href="#" class="searchbtn">🔍︎</a>
-    </nav>
-
+        <nav>
+            <div class="logo-container">
+                <img src="img/3d475d4abf5bf664187c0dfed7041f9b253d76dcdb7653c1f5637bcd340b20a8.png" alt="Company Logo" width="50" height="50">
+                <span class="logo-text">Alpha Group Security</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Request</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
     </header>
-     
+
     <main class="homepage">
-        <!--This is the welcome homepage-->
-        <h1>Alpha Group Security</h1>
-        <p>Welcome to Alpha Group Security</p>
-        <p>Your most trusted security company</p>
-        <!--This is an image of the company logo-->
-        <img src="img\3d475d4abf5bf664187c0dfed7041f9b253d76dcdb7653c1f5637bcd340b20a8.png" alt="Security Logo" width="500" height="300">
-        
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="web-title">Alpha Group Security</h1>
+                <p class="hero-subtitle">Your Trusted Partner in Safety & Protection</p>
+                <p class="hero-description">Providing professional, reliable, and affordable security services across South Africa</p>
+                <div class="hero-buttons">
+                    <a href="enquiry.html" class="btn btn-primary">Get a Quote</a>
+                    <a href="services.html" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/3d475d4abf5bf664187c0dfed7041f9b253d76dcdb7653c1f5637bcd340b20a8.png" alt="Security Logo" width="400" height="300">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>24/7 Protection</h3>
+                <p>Round-the-clock security services for your peace of mind</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👮</div>
+                <h3>Trained Guards</h3>
+                <p>Professional and certified security personnel</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📹</div>
+                <h3>Modern Technology</h3>
+                <p>State-of-the-art surveillance and monitoring systems</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Trusted Service</h3>
+                <p>Building trust through reliability and professionalism</p>
+            </div>
+        </section>
+
     </main>
 
-    <footer >
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Alpha Group Security</h4>
+                <p>Your trusted security partner in South Africa</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Request</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📞 +27 73 915 5695</p>
+                <p>📧 alphagroupsec1@gmail.com</p>
+                <p>📍 118 N8, Bloemfontein, Free State</p>
+            </div>
+        </div>
         <hr>
-        <p><center>Alpha Group Services 2026&copy;All rights reserved</center></p>
-        <hr>
-        <section class="foot">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="enquiry.html">Request</a>
-        <a href="contact.html">Contact</a>
-        </section>
+        <p class="footer-bottom">Alpha Group Services 2026 &copy; All rights reserved</p>
     </footer>
 
-
+    <script src="js/script.js"></script>
 </body>
 </html>
